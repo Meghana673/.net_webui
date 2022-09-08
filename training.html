@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online training</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width:100%;
+            float:center;
+        }
+        .left{
+            width: 20%;
+            height:600px;
+            background-color:plum;
+            border:2px solid rgb(96, 6, 89);
+            float:left;
+        }
+        .center{
+            background-color:rgb(242, 160, 130);
+            border:2px solid orangered;
+            float:left;
+            width: 60%;
+            height:600px;
+            
+        }
+        .right{
+            height:600px;
+            background-color: rgb(166, 236, 161);
+            border:2px solid rgb(4, 63, 25);
+            float:right;
+            width: 20%;
+            
+        }
+        .footer{
+            text-align: center;
+            background-color: rgb(227, 180, 119);
+            border:2px solid brown;
+            color:rgb(3, 3, 3);
+            padding: 20px;
+        }
+        p{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: large;
+          line-height: 1.6;
+          
+          
+       }
+       .vertical{
+            list-style-type: none;
+            margin:0;
+            margin-top: 20px;
+            padding:10px;
+            height:100%;
+        }
+        a.vert{
+            display:block;
+            color:darkblue;
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: larger;
+        }
+        a.vert:hover{
+            color: red;
+        }
+        nav{
+            background-color:rgb(25, 25, 56);
+            padding: 2px;
+        }
+        .top{
+            overflow: hidden;
+        }
+        .top a{
+            float: right;
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 23px 20px 0px 0px;
+        }
+        .navi:hover{
+           color: lightblue;
+        }
+        .navi:active{
+            color: coral;
+        } 
+       .navi{
+            margin-top: 0%;
+            padding-top: 20%;
+        }
+        .h{
+            font-weight: bold;
+            color: white;
+            font-size: 35px;
+            line-height: 2px;
+            padding: 0 100px;
+            margin-top: 2%;
+     
+           
+        }
+        .start{
+            font-weight: bold;
+            font-family: cursive;
+            font-size: 30px;
+            margin-left: 30px;
+            padding: auto;
+        }
+        .btn{
+            background-color: firebrick;
+            padding: 10px;
+            color: white;
+            position: relative;
+            margin-top: 40px;
+            right:40%;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color: coral;
+        }
+        pre{
+            font-size: 15px;
+            position: relative;
+            font-family: monospace;
+            margin-top: -3%;
+            margin-left: 38px;
+            
+        }
+        @media screen and (max-width:1000px) {
+            iframe{
+                width: 150px;
+                height: 150px;
+            }   
+            a.vert{
+            display:block;
+            color:darkblue;
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 15px;
+        } 
+        img{
+            width: 220px;
+            height: 250px;
+        }
+        p{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          line-height: 1.6; 
+       }
+       .start{
+            font-weight: bold;
+            font-family: cursive;
+            font-size: 25px;
+            margin-left: 20px;
+            padding: auto;
+        }
+        .btn{
+            background-color: firebrick;
+            padding: 6px;
+            color: white;
+            position: relative;
+            margin-top: 40px;
+            right:50%;
+            border-radius: 5px;
+        }
+        pre{
+            font-size: 13px;
+            position: relative;
+            font-family: monospace;
+            margin-top: -3%;
+            margin-left: 38px;
+            
+        }
+       
+        }
+
+        @media screen and (max-width:800px) {
+            iframe{
+                width: 100px;
+                height: 100px;
+            }   
+            a.vert{
+            display:block;
+            color:darkblue;
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 16px;
+        } 
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        p{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 12px;
+          line-height: 1.6; 
+       }
+       .start{
+            font-weight: bold;
+            font-family: cursive;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: auto;
+        }
+        .btn{
+            background-color: firebrick;
+            padding: 6px;
+            color: white;
+            position: relative;
+            margin-top: 40px;
+            left:10%;
+            border-radius: 5px;
+        }
+        pre{
+            font-size: 11px;
+            position: relative;
+            font-family: monospace;
+            margin-top: -20%;
+            margin-left: 30px;
+            
+        }
+        .top{
+            overflow: hidden;
+        }
+        .top a{
+            float: right;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 25px 20px 0px 0px;
+        }
+        .h{
+            font-weight: bold;
+            color: white;
+            font-size: 22px;
+            padding: 10px;
+    
+        }
+       
+        }
+
+        @media screen and (max-width:600px) {
+            iframe{
+                width: 80px;
+                height: 80px;
+            }   
+            a.vert{
+            display:block;
+            color:darkblue;
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 14px;
+        } 
+        img{
+            width: 160px;
+            height: 200px;
+        }
+        p{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          line-height: 1.6; 
+       }
+       .start{
+            font-weight: bold;
+            font-family: cursive;
+            font-size: 18px;
+            margin-left: 20px;
+            padding: auto;
+        }
+        .btn{
+            background-color: firebrick;
+            padding: 6px;
+            color: white;
+            position: relative;
+            margin-top: 40px;
+            left:20%;
+            border-radius: 5px;
+        }
+        pre{
+            font-size: 8px;
+            position: relative;
+            font-family: monospace;
+            margin-top: -25%;
+            margin-left: 30px;
+            
+        }
+        .top{
+            overflow: hidden;
+        }
+        .top a{
+            float: right;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 25px 20px 0px 0px;
+        }
+        .h{
+            font-weight: bold;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+    
+        }
+       
+        }
+
+
+
+   
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <nav>
+            <a class="navi" href="Registerform.html">Register</a> 
+            <a class="navi" id="active" href="training.html">Home</a>
+            
+            <h1 class="h">E-Learning</h1>
+        </nav>
+    </div>
+    <div class="parent">
+        <div>
+            <div class="left">
+                <ul class="vertical">
+                  
+                    <li><h3>CATAGORIES</li>
+                    <li><a class="vert" href="web.html" >Web Development</a></li>
+                    <li><a class="vert" href="datascience.html" >Data Science</a> </li>
+                    <li><a class="vert"  href="java.html" >Java</a></li>
+                    <li><a class="vert"  href="c.html">C</a></li>
+                    <li><a class="vert"  href="android.html">Android Development</a></li>
+                    <li><a class="vert"  href="python.html">PYTHON</a></li>
+                    <li><a class="vert"  href="database.html">Database</a></li>
+                    <li><a class="vert"  href="game.html">Game Development</a></li>
+                    <li><a class="vert"  href="dotnet.html">Dot Net</a></li>
+                    <li><a class="vert"  href="react.html">React</a></li>
+
+                   
+                    
+                </ul>
+            </div>
+            <div class="center">
+                
+                <img src="ONLINE-TRAINING.jpg" alt="training" width="500px" height="350px" style="float: left;">
+                <p>
+                    Training provides the skills, knowledge, and proficiency required to perform a task or excel in a position. 
+                    Quite often, especially in positions expected to lead to a career, the business world requires training of its employees that goes beyond what was provided in school or college, or that updates the knowledge gained there. 
+                    Sometimes this is required in order to keep up with developments in the field, or developments in the software applications, relevant legal codes, industry conditions, or other external changes that have transpired since the end of the employee’s degree program.
+
+                </p>
+               
+                <p class="start">Grow Your Career with online learning! </p>
+                <button class="btn"><a hreft="getstart.html">Get started </a></button>
+                <pre style="float: left;" >If your schedule makes it hard to attend classes, if you prefer
+studying at your own pace or if you live far from campus, 
+online learning might be for you.
+
+                </pre>
+                
+            </div>
+            <div class="right">
+                <h3 style="text-align: center;">Course Description</h3>
+                <iframe width="250" height="245" style="margin-left:20px;margin-top:20px;" src="https://www.youtube.com/embed/ZxKM3DCV2kE">
+                </iframe>
+                <iframe width="250" height="245" style="margin-left:20px;margin-top:20px;" src="https://www.youtube.com/embed/Q33KBiDriJY">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>&copy; www.elearning.com</h2>
+           </ul> 
+        </div>
+    </div>
+</body>
+</html>

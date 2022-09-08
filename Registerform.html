@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        .form{
+            width:600px;
+            margin-left:490px; 
+            background-color:lightyellow;
+            border: 5px saddlebrown;
+            box-shadow: 12px 15px 5px gray;
+            
+        }
+        .btn{
+  background-color: #00538B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+
+  margin-left: 15%;
+  cursor: pointer;
+  width: 25%;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Course Enrollment</h1>
+    <form action="" class="form">
+        <fieldset >
+            
+            <br><label>First Name</label>&nbsp;
+            <input type="text" name="fname" required><br><br>
+            <label>Last Name</label>&nbsp;
+            <input type="text" name="lname" required><br><br>
+            <label>Age</label>&nbsp;
+            <input type="number" required min="21" max="25"><br><br>
+            <label>Date of Birth</label>&nbsp;
+            <input type="date" required><br><br>
+            <label>Gender</label>&nbsp;
+            <input type="radio" id="gender" name="gender" value="Female">Female&nbsp;&nbsp;
+            <input type="radio" id="gender" name="gender" value="Male">Male<br><br>
+            <label>email</label>&nbsp;
+            <input type="email" name="email" required><br><br>
+            <label>Password</label>&nbsp;
+            <input type="password" name="password" required><br>  <br>
+            <label>Address</label>&nbsp;
+            <textarea></textarea><br><br>
+            <label>Select Course</label>
+            <select name="course">&nbsp;
+                    <option>C</option>
+                    <option>JAVA</option>
+                    <option>HTML</option>
+                    <option>DATABASE</option>
+                    <option>PYTHON</option>
+            </select><br><br>
+            <label>Certifications Taken</label><br>
+            <input type="checkbox" value="C">
+                <label>C Programing Certified</label><br>
+            <input type="checkbox" value="java">
+                <label>JAVA Programing Certified</label><br>
+            <input type="checkbox" value="web">
+                <label>Web development Certified</label><br>
+            <input type="checkbox" value="sql">
+                <label>Database Certified</label><br><br>
+            <input type="submit" class="btn">
+            </fieldset>
+    </form>
+    
+    
+</body>
+</html>
