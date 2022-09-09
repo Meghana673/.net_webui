@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping </title>
+</head>
+<body>
+    <script>
+        var a=10,b=20,temp;
+        //using third variable
+        document.write("Using Third VariblE"+"<br>");
+        document.write("a= "+a+" b="+b+"<br>");
+        document.write("Value of 2 numbers before swapping "+a+", "+b+"<br>");
+        temp=a;
+        a=b;
+        b=temp;
+        document.write("After swapping 2 numbers are "+a+" & "+b);
+
+        // without use of third variable
+        document.write("<br><br>");
+        document.write("WITHOUT USING THIRD VARIABLE"+"<br>");
+        document.write("Before swapping 2 numbers are "+"<br>");
+        document.write("a= "+a+" b="+b+"<br>");
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        document.write("After swapping 2 numbers are "+"<br>");
+        document.write("a="+a+" b="+b+"<br>");
+
+        //in one expression
+        document.write("<br><br>");
+        document.write("Using single expression <br>");
+        document.write("Before swapping 2 numbers are "+"<br>");
+        document.write("a= "+a+" b="+b+"<br>");
+        [a,b]=[b,a];
+        document.write("After swapping 2 numbers are "+"<br>");
+        document.write("a="+a+" b="+b+"<br>");
+    </script>
+        
+</body>
+</html>
