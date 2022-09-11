@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <style>
+        body{
+          background-color: lightcyan;
+        }
+       .nav-link:hover{
+        background-color:dimgray;
+       }
+        table{
+          background-color: slategrey;
+      
+        }
+        th thead{
+          background-color:aqua
+        }
+        tr:nth-child(even){
+          background-color: black;
+          color: white;
+        }
+        .btn{
+          float:right;
+        }
+        .btn-primary{
+          background-color: burlywood;
+          border:bisque;
+        }
+        .btn-primary:hover{
+          background-color: tan;
+        }
+        .card{
+          box-shadow: 8px 5px 5px gray;
+        }
+        .card:hover{
+          transform: scale(1.1);
+        }
+        .h{
+          font-family: fantasy;
+        
+        }
+        .col-md-6{
+        margin:25rem;
+          
+        }
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#" style="font-family:Arial ; font-weight:bold"> TOURAT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"  id="navbarNavAltMarkup">
+      
+            <div class="navbar-nav  nav-pills" style="border-bottom:0px;" class="nav">
+              <a class="nav-link active " style="background-color: grey;" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link" href="about.html">About us</a>
+              <a class="nav-link" href="tour.html">Tours</a>
+              <a class="nav-link" href="hotel.html">Hotels</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img1.jpg" class="d-block w-100" height="300px">
+            <div class="carousel-caption d-none d-md-block" >
+                <h3 class="h">Plan Your Vacations</h5>
+                <p style="font-family: cursive; color:aliceblue; font-weight: bold; font-size:large;">Dare to Live the life You've Always wanted</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img2.jpg" class="d-block w-100"  height="300px" >
+          </div>
+          <div class="carousel-item">
+            <img src="images/img3.jpg" class="d-block w-100" height="300px" >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row justify-content-between">
+            <div class="col col-3 col-sm-5 col-md-3 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/udaipur.jpg" class="card-img-top" alt="udaipur">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Udaipur</h5>
+                      <p class="card-text">Udaipur, also known as the City of Lakes, is one of the most visited tourist places in Rajasthan. Located around stunning water lakes and enveloped by the Aravalli Hills in all directions.</p>
+                      <a href="udaipur.html" class="btn btn-primary">View more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col col-3 col-sm-5 col-md-3 " >
+                <div class="card" style="width: 18rem;">
+                    <img src="images/manali.jpg" class="card-img-top" alt="manali">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Manali</h5>
+                      <p class="card-text">One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year. </p>
+                      <a href="manali.html" class="btn btn-info" >View more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col col-3 col-sm-4 col-md-3" >
+                <div class="card" style="width: 18rem;">
+                    <img src="images/SRINAGAR.jpg" class="card-img-top" alt="Srinagar">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Srinagar</h5>
+                      <p class="card-text" >
+                        Famously known as Heaven on Earth, Srinagar is located in the Jammu & Kashmir, on the banks of river Jhelum. Srinagar is known for the stationary houseboats and rowboats- Shikaras on Dal Lake.</p>
+                      <a href="srinagar.html" class="btn  btn-warning">View more</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="container">
+        <h2 style="text-align:center">TOUR PACKAGES</h2>
+        <table class="table table-hover table-striped table-bordered" style="width:100%;">
+          <thead style="background-color:lightblue ;">
+            <tr>
+              <th>Popular Packages</th>
+              <th>Duration</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maldives</td>
+              <td>3 Nights/ 4 Days</td>
+              <td>46000</td>
+            </tr>
+            <tr>
+              <td>Tour in Summer</td>
+              <td>4 Nights/ 5 Days</td>
+              <td>72000</td>
+            </tr>
+            <tr>
+              <td>Exotic Andaman Package</td>
+              <td>5 Nights/ 6 Days</td>
+              <td>23000</td>
+            </tr>
+            <tr>
+              <td>Manali Tour</td>
+              <td>3 Nights/ 4 Days</td>
+              <td>13000</td>
+            </tr>
+            <tr>
+              <td>Dubai Tour with Ferrari world</td>
+              <td>4 Nights/ 5 Days</td>
+              <td>34000</td>
+            </tr>
+            <tr>
+              <td>Ladakh Tour</td>
+              <td>5 Nights/ 6 Days</td>
+              <td>18000</td>
+            </tr>
+            <tr>
+              <td>Tirthan Valley</td>
+              <td>3 Nights/ 4 Days</td>
+              <td>15000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+</body>
+</html>

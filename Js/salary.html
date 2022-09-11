@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee
+        {
+            constructor(eid,ename,salary,role)
+            {
+                this.eid=eid;
+                this.ename=ename;
+                this.salary=salary;
+                this.role=role;
+            }
+             sal() {
+                if (this.role=="It"){
+                   var nsalary=this.salary+this.salary*50/100;
+
+                }
+                else if (this.role=="Testing")
+                {
+                   var nsalary=this.salary+this.salary*45/100;
+
+                }
+                else if (this.role=="Admin")
+                {
+                   var nsalary=this.salary+this.salary*30/100;
+
+                }
+                else 
+                {
+                   var nsalary=this.salary+this.salary*20/100;
+
+                }
+                return nsalary;
+                
+            }
+            display()
+            {
+                document.write("Id: "+this.eid+"<br>Name: "+this.ename+"<br>Salary: "+this.salary+"<br>role: "+this.role+"<br>");
+                document.write(" After counting bonus your new salary is  ");
+                document.write(this.sal()+"<hr>");
+            }
+
+            
+        }
+        var e=new Employee(11,"john",36000,"It");
+        var e1=new Employee(15,"jane",32000,"Testing");
+        e.display();
+        e1.display();
+   
+     
+
+    </script>
+</body>
+</html>
